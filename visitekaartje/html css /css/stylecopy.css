@@ -1,0 +1,133 @@
+ 
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IM Fell DW Pica', serif;
+    background-image: url('../images/background.jpg');
+	background-position: center center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+input{
+	display: none;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+main {
+	display: flex;
+}
+
+#cover{
+	width: 250px;
+	height: 400px;
+}
+
+.flip-book{
+	width: 250px;
+	height: 400px;
+	position: relative;
+	perspective: 1500px;
+}
+
+.flip{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform-origin: left;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+	transition: .5s;
+	color: #000;
+}
+
+h2 {
+	color: #c0a286 ;
+}
+
+p {
+	font-size: 13px;
+	line-height: 24px;
+	color: #4f553e;
+}
+
+ul:first-of-type {
+    font-size: 13px;
+    padding-left: 0;
+	list-style-type: none; 
+	color: #4f553e;
+}
+
+.front{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	box-sizing: border-box;
+	padding: 0 13px;
+	box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,.5);
+}
+.back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	transform: rotateY(180deg);
+	/* zodat je niet de achterkant erdoorheen ziet */
+	backface-visibility: hidden;
+	background: #000;
+}
+.next-btn{
+	position: absolute;
+	bottom: 11px;
+	right: 11px;
+	cursor: pointer;
+	color: #000;
+    font-style: italic;
+}
+.back-btn{
+	position: absolute;
+	bottom: 11px;
+	right: 11px;
+	cursor: pointer;
+	color: #fff;
+    font-style: italic;
+}
+
+/* zodat de pagina's op de juiste 'lagen' zitten*/
+#p1{
+	z-index: 3;
+}
+#p2{
+	z-index: 2;
+}
+#p3{
+	z-index: 1;
+}
+
+/* als je klikt op next of back op de pagina's dan slaat hij de pagina om*/
+/* ~ the second selector does NOT have to immediately follow the first one means It will select all elements that is preceded by the former selector. */
+#c1:checked ~ .flip-book #p1{
+	transform: rotateY(-180deg);
+	z-index: 1;
+}
+#c2:checked ~ .flip-book #p2{
+	transform: rotateY(-180deg);
+	z-index: 2;
+}
+#c3:checked ~ .flip-book #p3{
+	transform: rotateY(-180deg);
+	z-index: 3;
+}
