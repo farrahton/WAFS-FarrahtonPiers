@@ -11,6 +11,7 @@ body {
     /* background-repeat: no-repeat; */
 }
 
+/* zodat je geen vakje ziet voor de back en next checkbox buttons */
 input{
 	display: none;
 }
@@ -83,6 +84,7 @@ ul:first-of-type {
 	height: 100%;
 	top: 0;
 	left: 0;
+	/* lagen, hoogste getal is bovenop */
 	z-index: 99;
 	transform: rotateY(180deg);
 	/* zodat je niet de achterkant erdoorheen ziet */
@@ -106,7 +108,7 @@ ul:first-of-type {
     font-style: italic;
 }
 
-/* zodat de pagina's op de juiste 'lagen' zitten*/
+/* zodat de sections op de juiste 'lagen' zitten*/
 #p1{
 	z-index: 3;
 }
