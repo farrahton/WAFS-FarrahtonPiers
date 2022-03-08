@@ -1,10 +1,10 @@
-import { $ } from "../script.js";
+import { $ } from "./fetchArt.js";
 
-export function renderKuniyoshi(items) {
+export function renderHTML(items, selector) {
     console.log(items)
     const artwork = items.artObjects;
 
-    const list = $('#kuniyoshi');
+    const list = $(`${selector} ul`);
     for(let i = 0; i < artwork.length; i++) {
         list.insertAdjacentHTML('afterbegin', `
         <li>

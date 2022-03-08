@@ -58,3 +58,11 @@ I tried to incorporate a loading state, but I think it's just some display text 
 
 With the API I've used for the last few parts I can only retrieve some basic information. For more detailed descriptions I need to use seperate API and use the object number from the 'original' API data. 
 
+# Multiple states with the hashes
+The :target selector can be used to style the current active target element.
+
+child selector (>) 
+The child selector selects all elements that are the children of a specified element.
+
+https://www.smashingmagazine.com/2015/12/reimagining-single-page-applications-progressive-enhancement/ 
+This is the article I used to create the nav bar with the different artists.

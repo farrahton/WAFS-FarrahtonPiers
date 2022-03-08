@@ -1,5 +1,11 @@
-import { myFunc } from  "./modules/fetchHokusai.js";
+import { fetchArt } from  "./modules/fetchArt.js";
+
 
 // "./modules/fetchkuniyoshi.js"
+// const loader = document.querySelector('#loader');
+// loader.classList.remove('hidden'); 
 
-myFunc();
+fetchArt("Katsushika+Hokusai", "#hokusai");
+fetchArt("Utagawa+Kuniyoshi", "#kuniyoshi");
+
+// import { removeDefault } from "./modules/preventscroll.js";
