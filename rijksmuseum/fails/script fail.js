@@ -45,5 +45,23 @@ document.querySelector('.volgende').addEventListener('click', function() {
             }
 
 
+// A VERSION OF APP.JS WITH A BUNCH OF IMPORTS THAT I TURNED OFF BECAUSE THEY FAILED
 
+// import { fetchJapan } from "./modules/fetchJapan.js";
+import { fetchArt } from  "./modules/fetchArt.js";
+import { mySearch } from "./modules/searchbar1.js"; 
+// import { giveDetails } from "./modules/details.js"; 
 
+// import { noScroll} from "./modules/scroll.js";
+
+// "./modules/fetchkuniyoshi.js"
+// const loader = document.querySelector('#loader');
+// loader.classList.remove('hidden'); 
+// fetchJapan();
+fetchArt("Katsushika+Hokusai", "#hokusai");
+fetchArt("Utagawa+Kuniyoshi", "#kuniyoshi");
+// noScroll();
+// giveDetails(collection);
+mySearch();
+
+// import { removeDefault } from "./modules/preventscroll.js";
