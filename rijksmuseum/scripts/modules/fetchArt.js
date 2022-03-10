@@ -4,9 +4,9 @@ import { renderHTML } from "./renderHTML.js";
 // import { renderData } from "./details.js";
 export function fetchArt(involvedMaker, selector) {
 
-    const artworksArtists = `https://www.rijksmuseum.nl/api/nl/collection?key=9c1DbBQC&involvedMaker=${involvedMaker}&ps=20` ;
+    const artworksArtists = `https://www.rijksmuseum.nl/api/nl/collection?key=9c1DbBQC&involvedMaker=${involvedMaker}&ps=30` ;
     const loader = document.querySelector('#loaderContain');
-    const errorState = document.querySelector(".error");
+    const errorState = document.querySelector('.error');
     loader.classList.remove('hidden'); 
     // empty.classList.remove('hidden');
 
@@ -19,8 +19,9 @@ export function fetchArt(involvedMaker, selector) {
         fetch (artworksArtists)
             .then(function(response){
                 loader.classList.add('hidden');
-                // empty.classList.add('hidden');
-                return response.json();
+                console.log(response.status) 
+                // this is a ternary operator it checks if the response is between 200 and 299. >= stands for bigger than or equal and && stands for both >=  <=  should be true. For future reference: another possible option could be ||, which would mean 'or'.
+                return response.status >= 200 && response.status <= 299 ? response.json() : console.log('error')  
             })
             .then(function(items){
                 renderHTML(items, selector);

@@ -4,10 +4,6 @@
 
   /* Navigation */
 
-header {
-  /* height: 152px; */
-  }
-
  nav {
     background-color: beige;
     top: 0;
@@ -101,7 +97,6 @@ div img {
     
     background-color: white; 
     color: black;
-    
 }
 
 form {
@@ -111,7 +106,7 @@ form {
   margin-top: 8px;
   margin-right: 16px;
   font-size: 17px;
-  background-color: grey;
+  background-color: #254160;
   border-radius: 5px;
   display: flex;
 }

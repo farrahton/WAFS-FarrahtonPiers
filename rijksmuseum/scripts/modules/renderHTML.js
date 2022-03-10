@@ -11,7 +11,6 @@ export function renderHTML(items, selector) {
                 <img src='${artwork[i].webImage.url.slice(0, -3)+'=s1000'}' alt='${artwork[i].title}'>
                 <section>
                 <h2>${artwork[i].title}</h2>   
-                <p> </p>
                 </section>
         </li>`)
     }

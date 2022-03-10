@@ -1,10 +1,13 @@
+
+
+
 // 1. The variables 
 export function mySearch() { 
-const APIink = 'https://www.rijksmuseum.nl/api/en/collection?key=9c1DbBQC&ps=20';
+const APIlink = 'https://www.rijksmuseum.nl/api/en/collection?key=9c1DbBQC&ps=20';
 const searchField = document.getElementById('searchField');
 const searchAPI = 'https://www.rijksmuseum.nl/api/nl/collection?key=9c1DbBQC&ps=10&imgonly=true&q=';
 
-// const APIink = 'https://www.rijksmuseum.nl/api/nl/usersets/1692920-japan-alles?key=9c1DbBQC&ps=255&format=json';
+// const APIlink = 'https://www.rijksmuseum.nl/api/nl/usersets/1692920-japan-alles?key=9c1DbBQC&ps=255&format=json';
 // const searchField = document.getElementById('searchField');
 // const searchAPI = 'https://www.rijksmuseum.nl/api/nl/usersets/1692920-japan-alles?key=GnjcnmeH&ps=10&imgonly=true&q=';
 
@@ -12,7 +15,7 @@ const searchAPI = 'https://www.rijksmuseum.nl/api/nl/collection?key=9c1DbBQC&ps=
 
 let fullCollection;
  
-fetch (APIink)
+fetch (APIlink)
 .then(function(response){
     return response.json()
 })
