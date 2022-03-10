@@ -1,4 +1,7 @@
 const APIlink = 'https://www.rijksmuseum.nl/api/en/collection?key=9c1DbBQC&ps=20';
+const loader = document.querySelector('#loaderContain');
+loader.classList.remove('hidden'); 
+
 export const dataSearchRijks = 'https://www.rijksmuseum.nl/api/nl/collection?key=xvdOJegg&ps&q='
 
 function deleteResults() {
@@ -15,6 +18,7 @@ export function mySearch() {
     // Function fetching broad data base to search in
     fetch (APIlink)
         .then(function(response){
+            loader.classList.add('hidden');
             return response.json()
         })
 
@@ -49,11 +53,13 @@ export function searchDataRijks(searchValue) {
     
     fetch(resultsData)
         .then(function(response) {
+            loader.classList.add('hidden');
             return response.json();
         })
 
         .then(function(resultsData){
-            renderDataForSearch(resultsData)
+            loader.classList.add('hidden');
+            renderDataForSearch(resultsData);
         })
 
         .catch((error) => {
@@ -75,7 +81,6 @@ export function renderDataForSearch(resultsData) {
     
     const results = document.querySelector('#home ul');  
     
-
     for(let i=0; i < resultsData.artObjects.length; i++) {
         results.insertAdjacentHTML('beforeend',       
         `     

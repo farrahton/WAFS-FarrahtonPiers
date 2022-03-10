@@ -7,7 +7,6 @@ fetchArt("Utagawa+Kuniyoshi", "#kuniyoshi");
 mySearch();
 searchDataRijks(); 
 
-
 document.querySelector('form').addEventListener('submit', function(prevent) {
     prevent.preventDefault();
     const searchField = document.getElementById('searchField');

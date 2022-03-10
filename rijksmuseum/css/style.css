@@ -73,16 +73,20 @@ main > *:target ~ * {
     display: none;
 }
 
+main section {
+    padding-top: 100px;
+}
+
 .container {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 25em;;
 }
 
 div img {
-  width: 100%;
+  width: 100vw;
   height: 100%;  
-  /* overflow: hidden; */
+  overflow: hidden;
 
   object-fit: cover;
   background-position: center center;
@@ -93,8 +97,9 @@ div img {
 
 .text {
     position: absolute;
-    bottom: 50px;
-    right: 50px;
+    bottom: 7em;
+    right: 0em;
+    justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
     
@@ -103,15 +108,18 @@ div img {
 }
 
 form {
-  /* float: right; */
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
-  background-color: #254160;
-  border-radius: 5px;
-  display: flex;
+    padding: 6px;
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* margin-top: 8px; */
+    margin-top: -4em;
+    margin-bottom: 2em;
+    font-size: 17px;
+    background-color: #254160;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
 }
 
 input[type="search" i]  {
@@ -138,7 +146,7 @@ button {
 
 #loaderContain {
     background-color: white;
-    width: 1000vw;
+    width: 10000vw;
     height: 10000vh;
     z-index: 100000;
 }
@@ -291,6 +299,3 @@ li:hover {
 	transition: .3s ease-in-out;
 }
 
-main section {
-    padding-top: 152px;
-}
