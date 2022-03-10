@@ -80,7 +80,7 @@ export function renderDataForSearch(resultsData) {
         results.insertAdjacentHTML('beforeend',       
         `     
         <li>
-            <img src='${resultsData.artObjects[i].webImage.url}' alt='${resultsData.artObjects[i].longTitle}'>
+            <img src='${resultsData.artObjects[i].webImage.url.slice(0, -3)+'=s1000'}' alt='${resultsData.artObjects[i].longTitle}'>
             <section>
                 <h2>${resultsData.artObjects[i].longTitle}</h2>  
             </section>
