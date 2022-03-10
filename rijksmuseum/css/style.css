@@ -263,10 +263,10 @@ h1 {
 }
 
 h2 {
-    margin-bottom:5px;
+    margin: .5em;
 	text-transform:uppercase;
-    width: .8vw;
-	font-size: calc(.5vw + .5vh + .5vmin);
+    width: 70%;
+	font-size: calc(.4vw + .4vh + .4vmin);
 }
 
 h3 {
