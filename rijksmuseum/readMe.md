@@ -1,8 +1,10 @@
-<!-- # Table of contents
+# Table of contents
 1. [Introduction ](#introductionweek)
 2. [Userstory](#userstory)
 3. [Code](#codeexplanation)
-4. [Checklist](#checklist) -->
+4. [Checklist](#checklist)
+
+Live preview: https://farrahton.github.io/WAFS-FarrahtonPiers/rijksmuseum/ 
 
 
 # Introduction week <a name="introductionweek"></a>
