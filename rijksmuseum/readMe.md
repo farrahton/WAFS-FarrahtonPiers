@@ -218,5 +218,5 @@ After that we get into the actual searching part, wchich is actually pretty shor
 - [ ] Skeleton state
 - [ ] Routie
 - [ ] Error state for no results in search bar
-- [ ] More esponsive
+- [ ] More responsive
 
