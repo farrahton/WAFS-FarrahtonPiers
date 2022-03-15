@@ -173,7 +173,10 @@ Then when i tried to renderHTML i found out that in the array you get from this 
 
 
 ## Activity diagram
-<img src='./imagesReadMe/activityDiagram.png'> 
+<img src='./imagesReadMe/firstPageWireflow.jpg'> 
+<img src='./imagesReadMe/firstPageActivity.jpg'> 
+<img src='./imagesReadMe/navBarArtistWireflow.jpg'> 
+<img src='./imagesReadMe/navBarArtistActivity.jpg'> 
 
 ## Search bar
 Since I initially started with fetching URL with involed makers I had to use a different URL to fetch a bigger Rijksmuseum collection data base for the search bar. The approach for that is the same as the last fetch.
